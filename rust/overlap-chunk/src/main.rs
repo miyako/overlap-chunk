@@ -3,13 +3,6 @@ use std::env;
 use std::fs;
 use std::io::{self, Read};
 use std::process;
-use serde::Serialize;
-
-#[derive(Serialize)]
-struct ChunkOutput<'a> {
-    index: usize,
-    content: &'a str,
-}
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -105,22 +98,10 @@ fn main() {
 
     // Split text into chunks
     let chunks = chunk_text(&text, chunk_size, Some(options));
+    
+    let json_chunks: Vec<String> = chunks.iter().cloned().collect();
+    let json_output = serde_json::to_string(&json_chunks).unwrap();
 
-    // Output results
-    // for (i, chunk) in chunks.iter().enumerate() {
-    //     println!("Chunk {}: {}", i + 1, chunk);
-    // }
-    
-    let json_chunks: Vec<ChunkOutput> = chunks
-        .iter()
-        .enumerate()
-        .map(|(i, chunk)| ChunkOutput {
-            index: i + 1,
-            content: chunk,
-        })
-        .collect();
-    
-    let json_output = serde_json::to_string_pretty(&json_chunks).unwrap();
     println!("{}", json_output);
 }
 
