@@ -4,3 +4,4 @@ rust/overlap-chunk/target/*
 overlap-chunk/Project/DerivedData/*
 overlap-chunk/Data/data.4DD
 overlap-chunk/Libraries/lib4d-arm64.dylib
+actions-runner/*
