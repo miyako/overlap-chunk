@@ -4,9 +4,14 @@
 ![downloads](https://img.shields.io/github/downloads/miyako/overlap-chunk/total)
 
 # overlap-chunk
-port of [overlap-chunk](https://github.com/katsuhirohonda/overlap-chunk) by @katsuhirohonda
+
+split text into chunks (namespace: `overlap_chunk`)
 
 basic chunking, semantic token boundaries not considered.
+
+## acknowledgements
+
+[overlap-chunk](https://github.com/katsuhirohonda/overlap-chunk)
 
 ### usage
 
