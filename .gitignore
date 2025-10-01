@@ -1,0 +1,4 @@
+overlap-chunk/Data/data.journal
+overlap-chunk/userPreferences.*
+rust/overlap-chunk/target/*
+overlap-chunk/Project/DerivedData/*

@@ -1,0 +1,18 @@
+{
+  "name": "overlap-chunk",
+  "description": "tool for splitting text into chunks of specified size with adjustable overlap percentage",
+  "author": [
+    "Katsuhiro Honda<freewave3@gmail.com>",
+    "Keisuke Miyako <keisuke.miyako@4D.com>"
+  ],
+  "license": "MIT",
+  "repository": "https://github.com/miyako/overlap-chunk",
+  "version": "20.0.0",
+  "tool": {
+    "platform": "macos",
+    "branch": "20.x",
+    "version": "20.7",
+    "build": "latest",
+    "arch": "arm"
+  }
+}
