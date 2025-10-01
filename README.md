@@ -6,7 +6,7 @@
 # overlap-chunk
 port of [overlap-chunk](https://github.com/katsuhirohonda/overlap-chunk) by @katsuhirohonda
 
-basic chunking, not consideration of semantic token boundaries.
+basic chunking, semantic token boundaries not considered.
 
 ### usage
 
