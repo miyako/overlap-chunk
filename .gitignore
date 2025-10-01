@@ -2,3 +2,5 @@ overlap-chunk/Data/data.journal
 overlap-chunk/userPreferences.*
 rust/overlap-chunk/target/*
 overlap-chunk/Project/DerivedData/*
+overlap-chunk/Data/data.4DD
+overlap-chunk/Libraries/lib4d-arm64.dylib
