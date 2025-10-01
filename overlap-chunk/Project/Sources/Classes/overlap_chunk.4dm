@@ -61,12 +61,12 @@ Function chunk($option : Variant; $formula : 4D:C1709.Function) : Collection
 		
 		If ($option.size#Null:C1517) && ((Value type:C1509($option.size)=Is real:K8:4) || (Value type:C1509($option.size)=Is integer:K8:5)) && ($option.size>0)
 			$command+=" --size "
-			$command+=String:C10($option.size)
+			$command+=String:C10(Int:C8($option.size))
 		End if 
 		
 		If ($option.overlap#Null:C1517) && ((Value type:C1509($option.overlap)=Is real:K8:4) || (Value type:C1509($option.overlap)=Is integer:K8:5)) && ($option.overlap>0)
 			$command+=" --overlap "
-			$command+=String:C10($option.overlap)
+			$command+=String:C10(Int:C8($option.overlap))
 		End if 
 		
 		var $worker : 4D:C1709.SystemWorker
