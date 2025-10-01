@@ -50,8 +50,6 @@ Function chunk($option : Variant; $formula : 4D:C1709.Function) : Collection
 		
 		$command:=This:C1470.escape(This:C1470.executablePath)
 		
-		$command+=" extract "
-		
 		Case of 
 			: (OB Instance of:C1731($option.file; 4D:C1709.File)) && ($option.file.exists)
 				$command+=" "
