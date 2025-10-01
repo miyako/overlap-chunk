@@ -9,6 +9,10 @@ split text into chunks (namespace: `overlap_chunk`)
 
 basic chunking, semantic token boundaries not considered.
 
+## similar projects
+
+* [text-splitter](https://github.com/miyako/text-splitter)
+
 ## acknowledgements
 
 [overlap-chunk](https://github.com/katsuhirohonda/overlap-chunk)
