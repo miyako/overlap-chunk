@@ -5,7 +5,7 @@
 
 # overlap-chunk
 
-split text into chunks (namespace: `overlap_chunk`)
+tool to split text into chunks (namespace: `overlap_chunk`)
 
 basic chunking, semantic token boundaries not considered.
 
